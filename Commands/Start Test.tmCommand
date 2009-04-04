@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string># start unit tests
+echo "starting unit tests..."
+echo
+
+cd "$TM_PROJECT_DIRECTORY"
+
+neko "$TM_PROJECT_DIRECTORY"/deploy/test.n
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@u</string>
+	<key>name</key>
+	<string>Start Test</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.hxml, source.haxe</string>
+	<key>uuid</key>
+	<string>33749F7E-B47C-4D32-A180-BF5E8A2A2527</string>
+</dict>
+</plist>

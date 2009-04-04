@@ -1,0 +1,3 @@
+-cp src
+-main ${TM_NEW_FILE_BASENAME}
+-js deploy/out.js

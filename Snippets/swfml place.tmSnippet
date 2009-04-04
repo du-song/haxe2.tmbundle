@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;place id="${1:id}" name="${2:output_name}" depth="${3:depth}"/&gt;${0}</string>
+	<key>name</key>
+	<string>swfml place</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>tabTrigger</key>
+	<string>place</string>
+	<key>uuid</key>
+	<string>58366754-9871-4618-ABEC-61A3B8B571F0</string>
+</dict>
+</plist>

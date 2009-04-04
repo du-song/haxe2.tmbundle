@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>--flash-use-stage</string>
+	<key>name</key>
+	<string>hxml --flash-use-stage</string>
+	<key>scope</key>
+	<string>source.hxml</string>
+	<key>tabTrigger</key>
+	<string>fus</string>
+	<key>uuid</key>
+	<string>47C38BCD-C880-49D8-99D0-B2B275FA8F6F</string>
+</dict>
+</plist>

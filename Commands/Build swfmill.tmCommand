@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string># Compiles the swf library
+echo compile: "$TM_PROJECT_DIRECTORY"/assets/lib.swfml
+echo
+
+cd "$TM_PROJECT_DIRECTORY"
+
+swfmill simple "$TM_PROJECT_DIRECTORY"/assets/lib.swfml "$TM_PROJECT_DIRECTORY"/assets/lib.swf</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Build swfmill</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>uuid</key>
+	<string>8054CAC9-07B0-4AAD-9ADD-4806A4178F46</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>--gen-hx-classes ${1:file}</string>
+	<key>name</key>
+	<string>hxml --gen-hx-classes</string>
+	<key>scope</key>
+	<string>source.hxml</string>
+	<key>tabTrigger</key>
+	<string>ghc</string>
+	<key>uuid</key>
+	<string>D4BC339C-8B62-44DB-906A-C20729A41CC8</string>
+</dict>
+</plist>

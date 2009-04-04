@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;meta title="my title" description="To be indexed" /&gt;</string>
+	<key>name</key>
+	<string>swfml metadata</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>CA38704D-6BF1-4BF4-8014-319865E95BCC</string>
+</dict>
+</plist>

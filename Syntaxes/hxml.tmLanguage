@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>hxml</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*|\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>\*\*/|^\s*\}</string>
+	<key>name</key>
+	<string>hxml</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>(-cp|-js|-as3|-swf-header|-swf-version|swf-lib|-swf9|-swf|-neko|-php|-xml|-x|-main|-lib|-D|-resource|-exclude|-v|-debug|-prompt|-cmd|--flash-strict|--no-traces|--flash-use-stage|--neko-source|--gen-hx-classes|--next|--display|--no-output|--times|--no-inline|--php-front|--remap|-help|--help)</string>
+			<key>name</key>
+			<string>keyword.other.hxml</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.actionscript</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(#).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.number-sign.hxml</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.hxml</string>
+	<key>uuid</key>
+	<string>4D0F3C1A-578D-496C-9898-86A4BCA4FDA3</string>
+</dict>
+</plist>

@@ -1,0 +1,5 @@
+#build file
+-cp src
+-cp test
+-main ${TM_NEW_FILE_BASENAME}
+-neko deploy/test.n

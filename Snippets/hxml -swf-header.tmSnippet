@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>-swf-header ${1:width}:${2:height}:${3:fps}:${4:color}</string>
+	<key>name</key>
+	<string>hxml -swf-header</string>
+	<key>scope</key>
+	<string>source.hxml</string>
+	<key>tabTrigger</key>
+	<string>swf</string>
+	<key>uuid</key>
+	<string>4C2259F1-B3C6-43CC-BA37-9FA1BC5D339B</string>
+</dict>
+</plist>

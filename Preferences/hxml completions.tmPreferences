@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>hxml completions</string>
+	<key>scope</key>
+	<string>source.hxml</string>
+	<key>settings</key>
+	<dict>
+		<key>completions</key>
+		<array>
+			<string>-cp</string>
+			<string>-js</string>
+			<string>as3</string>
+			<string>-swf</string>
+			<string>-swf9</string>
+			<string>-swf-version</string>
+			<string>-swf-header</string>
+			<string>-swf-lib</string>
+			<string>-neko</string>
+			<string>-php</string>
+			<string>-x</string>
+			<string>-xml</string>
+			<string>-main</string>
+			<string>-lib</string>
+			<string>-D</string>
+			<string>-resource</string>
+			<string>-exclude</string>
+			<string>-v</string>
+			<string>-debug</string>
+			<string>-prompt</string>
+			<string>-cmd</string>
+			<string>--flash-strict</string>
+			<string>--no-traces</string>
+			<string>--flash-use-stage</string>
+			<string>--neko-source</string>
+			<string>--gen-hx-classes</string>
+			<string>--next</string>
+			<string>--display</string>
+			<string>--no-output</string>
+			<string>--times</string>
+			<string>--no-inline</string>
+			<string>--php-front</string>
+			<string>--remap</string>
+			<string>-help</string>
+			<string>--help</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>169AD6FA-7A86-463A-9250-179B5573B703</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;sound id="${1:id}" import="${2:resource}"/&gt;${0}</string>
+	<key>name</key>
+	<string>swfml sound</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>tabTrigger</key>
+	<string>sound</string>
+	<key>uuid</key>
+	<string>0D65FE3B-3F50-4BE6-A9CF-100D2D06076D</string>
+</dict>
+</plist>

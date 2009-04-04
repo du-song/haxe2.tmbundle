@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;FileAttributes hasMetaData="${1:flag}" useNetwork="${2:flag}" /&gt;${0}</string>
+	<key>name</key>
+	<string>swfml file attributes</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>tabTrigger</key>
+	<string>attributes</string>
+	<key>uuid</key>
+	<string>433D6213-AEB0-4C38-8C73-A46B9F7E0468</string>
+</dict>
+</plist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/bin/bash
+
+defaultProjectName="HaXeProject.tmproj";
+defaultClassPath="org.mydomain";
+
+fullProjectPath=$(CocoaDialog filesave \
+			--text "Please name your project and select a folder to save it into" \
+			--title "Create New Project" \
+			--with-extensions .tmproj \
+			--with-file "$defaultProjectName");
+
+if [ -n "$fullProjectPath" ]; then
+
+	fullProjectPath=$(tail -n1 &lt;&lt;&lt;"$fullProjectPath");
+	projectName=`basename "$fullProjectPath" ".tmproj"`;
+	projectPath=`dirname "$fullProjectPath"`;
+
+	# now ask them what they want the class path to be, this will be used to create default directories
+	fullClassPath=$(CocoaDialog standard-inputbox \
+				--title "Project Class Path" \
+				--text "$defaultClassPath.$projectName" \
+				--informative-text "Enter the project class path:");
+
+	if [ -n "$fullClassPath" ]; then
+		classPath=$(tail -n1 &lt;&lt;&lt;"$fullClassPath");
+		classPath=`echo $classPath | tr '.' '/'`;
+		classPathDirectory="$projectPath/$projectName/src/$classPath/";
+
+		#Create our project directory structure.
+		mkdir -p "$projectPath/$projectName/assets";
+		mkdir -p "$projectPath/$projectName/src";
+		mkdir -p "$projectPath/$projectName/deploy";
+
+		#Create all source code folders
+		mkdir -p "$classPathDirectory";
+
+		#Gather variables to be substituted.
+		TM_NEW_FILE_BASENAME="$projectName";
+
+		export TM_YEAR=`date "+%Y"`;
+		export TM_DATE=`date "+%d.%m.%Y"`;
+
+		# Customise file variables for the new project and rename files to match the project name
+		perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &lt; "Project.tmproj.xml" &gt; "$projectPath/$projectName/$projectName.tmproj";
+		perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &lt; "build.hxml" &gt; "$projectPath/$projectName/build.hxml";
+		perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &lt; "Project.hx" &gt; "$projectPath/$projectName/src/$projectName.hx";
+		
+		# Open the project in TextMate
+		open -a "TextMate.app" "$projectPath/$projectName/$projectName.tmproj";
+		
+	fi
+fi</string>
+	<key>extension</key>
+	<string>hx</string>
+	<key>name</key>
+	<string>haXe project</string>
+	<key>uuid</key>
+	<string>97EC3F99-BDBD-484C-A8FB-9DFEE9C507A4</string>
+</dict>
+</plist>

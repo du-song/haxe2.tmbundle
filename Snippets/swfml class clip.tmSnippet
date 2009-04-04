@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;clip id="${1:id}" import="{2:resource}" class="{3:class_path}"/&gt;{0}</string>
+	<key>name</key>
+	<string>swfml class clip</string>
+	<key>scope</key>
+	<string>source.swfml</string>
+	<key>tabTrigger</key>
+	<string>clip</string>
+	<key>uuid</key>
+	<string>9E4C5085-2172-457F-9193-A5BDA03808D7</string>
+</dict>
+</plist>

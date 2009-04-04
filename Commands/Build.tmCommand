@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string># Compiles from the project default build.hxml file
+echo compile: "$TM_PROJECT_DIRECTORY"/build.hxml
+echo
+
+cd "$TM_PROJECT_DIRECTORY"
+
+haxe "$TM_PROJECT_DIRECTORY"/build.hxml
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Build</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.hxml, source.haxe</string>
+	<key>uuid</key>
+	<string>20C7A9A6-4B7A-49A6-B5D1-660AB2023908</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>if [[ ! -f "$TM_NEW_FILE" ]]; then
+   TM_YEAR=`date +%Y` \
+   TM_DATE=`date +%Y-%m-%d` \
+   TM_USERNAME=`niutil -readprop / /users/\$USER realname` \
+   perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' \
+      &lt; build.hxml &gt; "$TM_NEW_FILE"
+fi</string>
+	<key>extension</key>
+	<string>hxml</string>
+	<key>name</key>
+	<string>hxml file</string>
+	<key>uuid</key>
+	<string>E45C9D6D-DEB0-4A73-AFF1-1573A4E589C9</string>
+</dict>
+</plist>

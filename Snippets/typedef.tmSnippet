@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>typedef ${1:typedef_name} =
+{
+	${2:expression}
+}</string>
+	<key>name</key>
+	<string>typedef</string>
+	<key>scope</key>
+	<string>source.haxe</string>
+	<key>tabTrigger</key>
+	<string>ty</string>
+	<key>uuid</key>
+	<string>8F53AFFF-F591-4B0E-9A98-DC8DC4952164</string>
+</dict>
+</plist>

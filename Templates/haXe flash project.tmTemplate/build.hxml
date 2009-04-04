@@ -1,0 +1,6 @@
+#build file
+-cp src
+-main ${TM_NEW_FILE_BASENAME}
+-swf deploy/out.swf
+-swf-lib assets/lib.swf
+
