@@ -16,6 +16,12 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>#(if|else|elseif|end)\b</string>
+			<key>name</key>
+			<string>keyword.preprocessor.macro.haxe</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(flash.)?\b(Accessibility|Boot|Button|Camera|Color|ContextMenu|ContextMenuItem|ExtendedKey|Key|Lib|LoadVars|LocalConnection|Microphone|Mouse|MovieClip|MovieClipLoader|NetConnection|NetStream|PrintJob|Selection|SelectionListener|SharedObject|Sound|Stage|System|TextField|TextFormat|TextSnapshot|Video|XMLRequest|XMLSocket)\b</string>
 			<key>name</key>
 			<string>support.class.haxe.flash</string>
@@ -52,7 +58,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(flash.system.)?\b(Capabilities|IME|Security)\b</string>
+			<string>(flash.system.)?\b(Capabilities|IME|Security|LoaderContext|SecurityDomain|ApplicationDomain)\b</string>
 			<key>name</key>
 			<string>support.class.haxe.flash.system</string>
 		</dict>
@@ -316,7 +322,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(case|cast|catch|default|dynamic|do|else|for|get|if|in|new|set|switch|throw|try|type|while|return|break|continue|extern|dynamic|implements|inline|override|private|public|static|import|package|var)\b</string>
+			<string>\b(case|cast|catch|default|dynamic|do|else|for|get|if|in|new|set|switch|throw|try|type|while|return|break|continue|extern|dynamic|implements|inline|override|private|public|static|import|using|package|var)\b</string>
 			<key>name</key>
 			<string>keyword.control.haxe</string>
 		</dict>
